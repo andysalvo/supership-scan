@@ -107,9 +107,39 @@ Runs 20 deliberately vulnerable fixtures against the scanner. Expected: 90% true
 - Attestation transmits hashes and findings only. Never source code.
 - No telemetry. No analytics. No tracking.
 
+## API
+
+supership also runs as an x402-native API. Pay per scan with USDC on Base. No API keys, no subscriptions.
+
+| Endpoint | Method | Price | Description |
+|----------|--------|-------|-------------|
+| `/check` | GET | Free | Trust check for any x402 service URL |
+| `/scan/free` | POST | Free | Score + grade, all 6 categories |
+| `/scan/quick` | POST | $1 | Secrets + config findings |
+| `/scan/full` | POST | $5 | All categories + fixes |
+| `/scan/deep` | POST | $15 | Full + LLM contextual review |
+| `/attest` | POST | $0.01 | Sign and witness a scan result |
+
+API base: `https://supership.crestsystems.ai`
+
+Discovery endpoints: [agent.json](https://supership.crestsystems.ai/.well-known/agent.json) | [llms.txt](https://supership.crestsystems.ai/llms.txt) | [OpenAPI](https://supership.crestsystems.ai/openapi.json)
+
+## Crest x402 Services
+
+supership is part of the Crest Deployment Systems x402 service fleet. All services accept USDC payments on Base mainnet via the x402 protocol.
+
+| Service | What it does | URL |
+|---------|-------------|-----|
+| **supership** | Predeploy security scanner + attestation | [supership.crestsystems.ai](https://supership.crestsystems.ai) |
+| **data** | Crypto market data, token lookups, gas prices | [data.crestsystems.ai](https://data.crestsystems.ai) |
+| **audit** | Smart contract audit, code security, wallet risk | [audit.crestsystems.ai](https://audit.crestsystems.ai) |
+
 ## Links
 
-- [Documentation](https://supership.crestsystems.ai/docs)
+- [supership API](https://supership.crestsystems.ai)
+- [Documentation](https://github.com/andysalvo/supership-docs)
+- [npm: supership-scan](https://www.npmjs.com/package/supership-scan)
+- [npm: @crestdeploymentsystems/supership-mcp](https://www.npmjs.com/package/@crestdeploymentsystems/supership-mcp)
 - [Crest Deployment Systems](https://crestsystems.ai)
 
 ## License

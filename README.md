@@ -140,7 +140,7 @@ supership is part of the Crest Deployment Systems x402 service fleet. All servic
 - [Documentation](https://github.com/andysalvo/supership-docs)
 - [npm: supership-scan](https://www.npmjs.com/package/supership-scan)
 - [npm: @crestdeploymentsystems/supership-mcp](https://www.npmjs.com/package/@crestdeploymentsystems/supership-mcp)
-- [Crest Deployment Systems](https://crestsystems.ai)
+- [Crest Deployment Systems](https://crestsystems.ai) -- deploying scalable intelligence
 
 ## License
 

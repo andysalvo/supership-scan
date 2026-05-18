@@ -1,6 +1,7 @@
 {
   "name": "supership-scan",
-  "version": "1.0.0",
+  "version": "1.1.0",
+  "mcpName": "io.github.andysalvo/supership-scan",
   "description": "Predeploy security scanner for the agent economy. 80+ vulnerability patterns. Runs locally, code never leaves your machine.",
   "type": "module",
   "bin": {

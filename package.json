@@ -1,0 +1,54 @@
+{
+  "name": "supership-scan",
+  "version": "1.0.0",
+  "description": "Predeploy security scanner for the agent economy. 80+ vulnerability patterns. Runs locally, code never leaves your machine.",
+  "type": "module",
+  "bin": {
+    "supership-scan": "./src/cli.mjs",
+    "supership-mcp": "./src/server.mjs"
+  },
+  "exports": {
+    ".": "./src/scanner.mjs",
+    "./mcp": "./src/server.mjs"
+  },
+  "scripts": {
+    "test": "node benchmark/run.mjs",
+    "start:mcp": "node src/server.mjs"
+  },
+  "files": [
+    "src/",
+    "benchmark/",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "security",
+    "scanner",
+    "sast",
+    "predeploy",
+    "mcp",
+    "agent",
+    "x402",
+    "attestation",
+    "vulnerability",
+    "secrets",
+    "injection",
+    "supabase"
+  ],
+  "author": "Crest Deployment Systems LLC",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/andysalvo/supership-scan.git"
+  },
+  "bugs": {
+    "url": "https://github.com/andysalvo/supership-scan/issues"
+  },
+  "homepage": "https://supership.crestsystems.ai",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
